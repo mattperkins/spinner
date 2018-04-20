@@ -16,20 +16,21 @@
             height: 100vh;
         }
         .spinner{
-            border: 12px solid #ccc;
-            width: 120px;
-            height: 120px;
+            border: 24px solid #ccc;
+            width: 240px;
+            height: 240px;
             border-radius: 50%;
             border-top-color: #1ecd97;
-            border-left-color: #1ecd97;
-            animation: spin 1s infinite ease-in-out;
+            border-left-color: #33f;
+            border-right-color: #f33;
+            animation: spin 4s infinite ease;
         }
 
         @keyframes spin{
              /* keep in multiples of 3 for smooth transition */
             0% {
-                transform: scale(1);
                 transform: rotate(0deg);
+                transform: scale(.1);
             }
             20% {    
                 transform: rotate(135deg);
@@ -45,6 +46,7 @@
             }
             100% {
                 transform: rotate(1080deg);
+                transform: scale(.1);
             }
         }
 
