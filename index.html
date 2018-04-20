@@ -24,6 +24,17 @@
             border-left-color: #1ecd97;
             animation: spin 1s infinite ease-in-out;
         }
+
+        @keyframes spin{
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                /* keep in multiples of 3 for smooth transition */
+                transform: rotate(1080deg);
+            }
+        }
+
     </style>
 </head>
 <body>
