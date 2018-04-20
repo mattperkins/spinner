@@ -23,17 +23,17 @@
             border-top-color: #1ecd97;
             border-left-color: #33f;
             border-right-color: #f33;
-            animation: spin 4s infinite ease;
+            animation: spin 4s infinite linear;
         }
 
         @keyframes spin{
              /* keep in multiples of 3 for smooth transition */
             0% {
-                transform: rotate(0deg);
-                transform: scale(.1);
+                
+                transform: scale(.5 );
             }
             20% {    
-                transform: rotate(135deg);
+                transform: rotate(-135deg);
             }
             40% {    
                 transform: rotate(270deg);
@@ -45,8 +45,8 @@
                 transform: rotate(840deg);
             }
             100% {
-                transform: rotate(1080deg);
-                transform: scale(.1);
+                
+                transform: scale(.5);
             }
         }
 
